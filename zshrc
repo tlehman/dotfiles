@@ -1,11 +1,12 @@
 # Environment Variables
 export EDITOR=nvim
-#export PS1=""
+# Set the prompt
+setopt PROMPT_SUBST
+export PS1='%F{cyan}%~%f $(parse_git_branch)%# '
 
 # Aliases
 alias vi=nvim
 alias vim=nvim
-
 
 # Evaluations
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -37,4 +38,9 @@ function tat {
   else
     tmux new-session -s "$name"
   fi
+}
+
+# Function to get the current Git branch
+parse_git_branch() {
+  git branch 2>/dev/null | sed -n -e 's/^\* \(.*\)/(\1)/p'
 }
