@@ -1,0 +1,13 @@
+arc     Browser
+fd      Find Entries in the Filesystem
+fzf     Fuzzy Find
+htop
+jq      
+ncdu    Nice Disk Usage
+nvim    NeoVim
+ripgrep
+tmux    Terminal Multiplexer
+tree
+watch
+yazi    CLI File Manager 
+zoxide  Smarter CD command
