@@ -1,6 +1,6 @@
 # Environment Variables
 export EDITOR=nvim
-export PS1=""
+#export PS1=""
 
 # Aliases
 alias vi=nvim
