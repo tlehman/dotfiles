@@ -1,10 +1,17 @@
-echo >> /Users/tobi.lehman/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(direnv hook zsh)"
+# Environment Variables
 export EDITOR=nvim
+export PS1=""
+
+# Aliases
 alias vi=nvim
 alias vim=nvim
 
+
+# Evaluations
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(direnv hook zsh)"
+
+# Functions
 y () {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
