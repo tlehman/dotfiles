@@ -1,5 +1,5 @@
-theme = kanagawabones
-background = 101014
+theme = xcodelight
+window-save-state = always
 background-opacity = 0.9
 background-blur = true
 font-size = 18
