@@ -8,12 +8,22 @@ export PS1='%F{cyan}%~%f $(parse_git_branch)%# '
 alias vi=nvim
 alias vim=nvim
 
+# Completions
+autoload -U +X compinit && compinit
+
 # Evaluations
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
 
+# History
+export HISTSIZE=20000
+export HISTFILE="$HOME/.zsh_history"
+export SAVEHIST=$HISTSIZE
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+
 # Functions
-y () {
+function y () {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")"  && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]
@@ -41,6 +51,7 @@ function tat {
 }
 
 # Function to get the current Git branch
-parse_git_branch() {
+function parse_git_branch() {
   git branch 2>/dev/null | sed -n -e 's/^\* \(.*\)/(\1)/p'
 }
+

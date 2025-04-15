@@ -7,3 +7,4 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
+
