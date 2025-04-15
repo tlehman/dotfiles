@@ -8,6 +8,10 @@ export PS1='%F{cyan}%~%f $(parse_git_branch)%# '
 alias vi=nvim
 alias vim=nvim
 
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.config/zsh/git-completion.zsh
+fpath=(~/.zsh $fpath)
+
 # Completions
 autoload -U +X compinit && compinit
 
@@ -21,6 +25,10 @@ export HISTFILE="$HOME/.zsh_history"
 export SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
+#
+# Prevent tmux from using vi keybindings:
+#    http://matija.suklje.name/zsh-vi-and-emacs-modes
+bindkey -e
 
 # Functions
 function y () {
