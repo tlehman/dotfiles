@@ -4,6 +4,7 @@ fd       Find Entries in the Filesystem
 fzf      Fuzzy Find
 htop
 jq       
+macchina Get machine stats
 ncdu     Nice Disk Usage
 nvim     NeoVim
 ripgrep
