@@ -13,5 +13,6 @@ vim.g.mapleader = ","
 opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', opts)
+vim.api.nvim_set_keymap('i', 'kj', '<ESC>', opts)
 
 require("config.lazy")
