@@ -1,4 +1,5 @@
 arc     Browser
+bat     Bat is like cat but better
 fd      Find Entries in the Filesystem
 fzf     Fuzzy Find
 htop
