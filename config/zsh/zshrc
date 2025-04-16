@@ -12,12 +12,17 @@ alias vim=nvim
 zstyle ':completion:*:*:git:*' script ~/.config/zsh/git-completion.zsh
 fpath=(~/.zsh $fpath)
 
-# Completions
-autoload -U +X compinit && compinit
-
 # Evaluations
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
+if [[ $options[zle] = on ]]; then
+  eval "$(fzf --zsh)"
+fi
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
+# Completions
+autoload -U +X compinit && compinit
 
 # History
 export HISTSIZE=20000
@@ -40,10 +45,6 @@ function y () {
 	fi
 	rm -f -- "$tmp"
 }
-if [[ $options[zle] = on ]]; then
-  eval "$(fzf --zsh)"
-fi
-eval "$(zoxide init zsh)"
 
 # tat: tmux attach
 function tat {
