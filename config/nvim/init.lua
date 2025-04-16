@@ -15,4 +15,9 @@ vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', opts)
 vim.api.nvim_set_keymap('i', 'kj', '<ESC>', opts)
 
+local filename = vim.api.nvim_buf_get_name(0)
+
 require("config.lazy")
+
+slimux = require("slimux")
+slimux.send(filename)
