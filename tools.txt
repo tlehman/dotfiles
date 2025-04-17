@@ -1,16 +1,20 @@
-arc      Browser
-bat      Bat is like cat but better
-fd       Find Entries in the Filesystem
-fzf      Fuzzy Find
+arc                     Browser
+bat                     Bat is like cat but better
+fd                      Find Entries in the Filesystem
+fzf                     Fuzzy Find
+go                      Go programming language
+gopls                   Go Language Server
+haskell-language-server
 htop
 jq       
-macchina Get machine stats
-ncdu     Nice Disk Usage
-nvim     NeoVim
+macchina                Get machine stats
+nix                     Nix package manager
+ncdu                    Nice Disk Usage
+nvim                    NeoVim
 ripgrep
-starship Cross-shell prompt
-tmux     Terminal Multiplexer
+starship                Cross-shell prompt
+tmux                    Terminal Multiplexer
 tree
 watch
-yazi     CLI File Manager 
-zoxide   Smarter CD command
+yazi                    CLI File Manager 
+zoxide                  Smarter CD command

@@ -69,19 +69,8 @@ return {
     }
 
     local servers = {
-      --"bashls",
-      --"ccls",
-      --"crystalline",
-      --"dartls",
-      --"dockerls",
-      --"gdscript",
       "gopls",
-      --"lua_ls",
-      --"pylsp",
-      --"rust_analyzer",
-      --"solargraph",
-      --"terraformls",
-      --"ts_ls",
+      "hls"
     }
     for _, lsp in ipairs(servers) do
       nvim_lsp[lsp].setup(opts)
