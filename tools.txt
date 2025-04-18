@@ -4,6 +4,8 @@ fd                      Find Entries in the Filesystem
 fzf                     Fuzzy Find
 go                      Go programming language
 gopls                   Go Language Server
+shellcheck
+bash-language-server
 haskell-language-server
 htop
 jq       

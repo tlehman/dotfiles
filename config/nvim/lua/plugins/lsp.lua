@@ -70,7 +70,8 @@ return {
 
     local servers = {
       "gopls",
-      "hls"
+      "hls",
+      "bashls",
     }
     for _, lsp in ipairs(servers) do
       nvim_lsp[lsp].setup(opts)

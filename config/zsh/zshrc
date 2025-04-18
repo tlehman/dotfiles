@@ -3,6 +3,8 @@ export EDITOR=nvim
 # Set the prompt
 setopt PROMPT_SUBST
 export PS1='%F{cyan}%~%f $(parse_git_branch)%# '
+# GPG TTY for signing
+export GPG_TTY=$(tty)
 
 # Aliases
 alias vi=nvim
