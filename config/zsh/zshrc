@@ -15,13 +15,15 @@ zstyle ':completion:*:*:git:*' script ~/.config/zsh/git-completion.zsh
 fpath=(~/.zsh $fpath)
 
 # Evaluations
-eval "$(/opt/homebrew/bin/brew shellenv)"
+#eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(direnv hook zsh)"
 if [[ $options[zle] = on ]]; then
   eval "$(fzf --zsh)"
 fi
+if [ $(uname) -eq "Darwin" ]; then
+  eval "$(starship init zsh)"
+fi
 eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
 
 # Completions
 autoload -U +X compinit && compinit
@@ -48,18 +50,6 @@ function y () {
 	rm -f -- "$tmp"
 }
 
-# tat: tmux attach
-function tat {
-  name=$(basename `pwd` | sed -e 's/\.//g')
-
-  if tmux ls 2>&1 | grep "$name"; then
-    tmux attach -t "$name"
-  elif [ -f .envrc ]; then
-    direnv exec / tmux new-session -s "$name"
-  else
-    tmux new-session -s "$name"
-  fi
-}
 
 # Function to get the current Git branch
 function parse_git_branch() {
