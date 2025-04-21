@@ -15,15 +15,13 @@ zstyle ':completion:*:*:git:*' script ~/.config/zsh/git-completion.zsh
 fpath=(~/.zsh $fpath)
 
 # Evaluations
-#eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
 if [[ $options[zle] = on ]]; then
   eval "$(fzf --zsh)"
 fi
-if [[ "$(uname)" -eq "Darwin" ]]; then
-  eval "$(starship init zsh)"
-fi
-eval "$(zoxide init zsh)"
 
 # Completions
 autoload -U +X compinit && compinit
@@ -41,13 +39,13 @@ bindkey -e
 
 # Functions
 function y () {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")"  && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]
-	then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
+  local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(cat -- "$tmp")"  && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]
+  then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
 }
 
 
