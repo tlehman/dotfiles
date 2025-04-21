@@ -20,7 +20,7 @@ eval "$(direnv hook zsh)"
 if [[ $options[zle] = on ]]; then
   eval "$(fzf --zsh)"
 fi
-if [ $(uname) -eq "Darwin" ]; then
+if [[ "$(uname)" -eq "Darwin" ]]; then
   eval "$(starship init zsh)"
 fi
 eval "$(zoxide init zsh)"
