@@ -1,3 +1,4 @@
+1password-cli           1password command line interface (the op command)
 arc                     Browser
 bat                     Bat is like cat but better
 fd                      Find Entries in the Filesystem
