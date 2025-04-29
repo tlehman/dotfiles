@@ -9,6 +9,8 @@ bash-language-server
 haskell-language-server
 htop
 jq       
+lua
+luarocks
 macchina                Get machine stats
 nix                     Nix package manager
 ncdu                    Nice Disk Usage
