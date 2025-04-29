@@ -18,6 +18,8 @@ vim.api.nvim_set_keymap('i', 'kj', '<ESC>', opts)
 local filename = vim.api.nvim_buf_get_name(0)
 
 require("config.lazy")
+require("lazy").setup("plugins")
 
 slimux = require("slimux")
 slimux.send(filename)
+
