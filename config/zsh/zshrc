@@ -6,6 +6,9 @@ export PS1='%F{cyan}%~%f $(parse_git_branch)%# '
 # GPG TTY for signing
 export GPG_TTY=$(tty)
 
+# Machine-specific environment variables and aliases set here
+source ~/.work
+
 # Aliases
 alias vi=nvim
 alias vim=nvim
