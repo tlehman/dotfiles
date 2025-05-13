@@ -8,6 +8,12 @@ repo.
 
 This contains some useful nix programs to do things like Python dependency management using the nix package manager.
 
+To use python-shell.nix file, run:
+
+```sh
+nix-shell nix/python-shell.nix
+```
+
 ## Dependencies
 
 See [tools.txt](./tools.txt)

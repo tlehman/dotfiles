@@ -13,6 +13,8 @@ vim.g.mapleader = ","
 opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', opts)
 vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', opts)
+vim.api.nvim_set_keymap('n', '<Leader>e', ':lua vim.diagnostic.open_float(0, {scope="line"})<CR>', opts)
+vim.api.nvim_set_keymap('n', '<ESC>', ':noh<CR>', opts)
 vim.api.nvim_set_keymap('i', 'kj', '<ESC>', opts)
 
 local filename = vim.api.nvim_buf_get_name(0)
