@@ -72,6 +72,8 @@ return {
       "gopls",
       "hls",
       "bashls",
+      "lua_ls",
+      "terraform-ls",
     }
     for _, lsp in ipairs(servers) do
       nvim_lsp[lsp].setup(opts)

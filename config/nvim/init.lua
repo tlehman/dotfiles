@@ -25,3 +25,4 @@ require("lazy").setup("plugins")
 slimux = require("slimux")
 slimux.send(filename)
 
+vim.o.exrc = true
