@@ -39,11 +39,12 @@
             amend = "commit --amend -m";
             fixup = "!f(){ git reset --soft HEAD~\${1} && git commit --amend -C HEAD; };f";
             loc = ''!f(){ git ls-files | ${rg} "\.''${1}" | xargs wc -l; };f'';
-            br = "branch";
+            b = "branch";
             co = "checkout";
-            st = "status";
+            s = "status";
             ls = "!git log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]%Creset' --color=always --decorate | less -RFX";
             ll = "!git log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]%Creset' --color=always --decorate --numstat | less -RFX";
+            lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";
             cm = "commit -m";
             ca = "commit -am";
             dc = "diff --cached";

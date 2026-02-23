@@ -16,9 +16,9 @@ eval "$(determinate-nixd completion zsh)"
 # allows brew commands
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# local bin directory
-export PATH="$HOME/.local/bin:$PATH"
-
 # add bun to path
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# local bin directory
+export PATH="$HOME/.local/bin:$PATH"
