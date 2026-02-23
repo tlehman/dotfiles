@@ -13,6 +13,7 @@
       git.enable = lib.mkDefault true;
       ssh.enable = lib.mkDefault true;
       starship.enable = lib.mkDefault true;
+      yazi.enable = lib.mkDefault true;
     };
     home.packages = with pkgs; [
       btop
