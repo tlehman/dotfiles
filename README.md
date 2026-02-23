@@ -37,3 +37,7 @@ sudo mv /etc/nix/nix.conf /etc/nix/nix.conf.before-nix-darwin
 ```sh
 nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake .
 ```
+
+6. Updates
+
+When you make changes to your dotfiles, you can update your system by running:

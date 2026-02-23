@@ -8,7 +8,7 @@ zle -N edit-command-line
 # Vi style
 export VISUAL=nvim
 bindkey -M vicmd v edit-command-line
-set -o vi
+#set -o emacs
 
 # has: bash, elvish, fish, powershell, zsh
 eval "$(determinate-nixd completion zsh)"
@@ -18,3 +18,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # local bin directory
 export PATH="$HOME/.local/bin:$PATH"
+
+# add bun to path
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
