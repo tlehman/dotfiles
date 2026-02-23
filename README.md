@@ -2,7 +2,7 @@
 
 These are my nix-darwin and home-manager configurations for my work and personal computers.
 
-Inspirted by [kriswill/dotfiles](https://github.com/kriswill/dotfiles)
+Inspired by [kriswill/dotfiles](https://github.com/kriswill/dotfiles)
 
 ## MacOS
 
