@@ -1,0 +1,8 @@
+.direnv
+pkgs/result
+**/.DS_Store
+.obsidian
+**/result
+.claude
+.claude/settings.local.json
+.todos/
