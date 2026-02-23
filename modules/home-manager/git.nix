@@ -12,7 +12,7 @@
     let
       rg = "${pkgs.ripgrep}/bin/rg";
       email = "261552+tlehman@users.noreply.github.com";
-      sshPubKey = "ssh-ed25519 PLACEHOLDER";
+      sshPubKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINtfXkBWSOIn4J2WS5qBw2SGKk21K1bZqn26UMkS+hu6";
     in
     {
       home.packages = with pkgs; [
