@@ -30,6 +30,7 @@
         cat = "bat";
         ".." = "cd ..;";
         "..." = ".. ..";
+        zed = "open -a Zed";
       };
 
       initContent = builtins.readFile ./initExtra.sh;
