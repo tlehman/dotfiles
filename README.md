@@ -22,8 +22,8 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 
 ```sh
 mkdir -p ~/src
-git clone https://github.com/tlehman/dotfiles ~/src/dotfiles
-cd ~/src/dotfiles
+git clone https://github.com/tlehman/dotfiles ~/src/tlehman/dotfiles
+cd ~/src/tlehman/dotfiles
 ```
 
 4. Move determinate's nix.conf out of the way:

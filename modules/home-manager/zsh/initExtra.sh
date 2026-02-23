@@ -7,7 +7,7 @@ autoload -U edit-command-line
 zle -N edit-command-line
 # Vi style
 export VISUAL=nvim
-bindkey -M vicmd v edit-command-line
+#bindkey -M vicmd v edit-command-line
 #set -o emacs
 
 # has: bash, elvish, fish, powershell, zsh

@@ -33,8 +33,8 @@
           nh = lib.getExe pkgs.nh;
         in
         {
-          nrs = "NH_NO_CHECKS=1 ${nh} darwin switch ~/src/dotfiles";
-          nrt = "NH_NO_CHECKS=1 ${nh} darwin test ~/src/dotfiles";
+          nrs = "NH_NO_CHECKS=1 ${nh} darwin switch ~/src/tlehman/dotfiles";
+          nrt = "NH_NO_CHECKS=1 ${nh} darwin test ~/src/tlehman/dotfiles";
         };
       etc."pam.d/sudo_local".text = ''
         # Allow for touch ID to work for sudo, inside of tmux
