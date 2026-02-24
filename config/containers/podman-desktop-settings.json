@@ -1,0 +1,21 @@
+{
+  "telemetry.enabled": false,
+  "preferences.appearance": "dark",
+  "preferences.navigationBarLayout": "icon",
+  "releaseNotesBanner.show": "1.23.1",
+  "welcome.version": "initial",
+  "kubectl.binary.installKubectlSystemWide": true,
+  "window.bounds": {
+    "x": -2560,
+    "y": -404,
+    "width": 2560,
+    "height": 848
+  },
+  "telemetry.check": true,
+  "preferences.zoomLevel": 2,
+  "titleBar.searchBar": {
+    "remindAt": 1771813064433,
+    "disabled": false
+  },
+  "dockerCompatibility.enabled": true
+}
