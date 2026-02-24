@@ -4,6 +4,9 @@
   "buffer_font_family": "FiraCode Nerd Font Propo Regular",
   "buffer_font_size": 18,
   "ui_font_size": 18,
+  "edit_predictions": {
+    "mode": "off"
+  },
   "terminal": {
     "font_family": "FiraCode Nerd Font Propo Regular",
     "font_size": 18
