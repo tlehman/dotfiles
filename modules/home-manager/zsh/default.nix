@@ -30,6 +30,8 @@
         cat = "bat";
         ".." = "cd ..;";
         "..." = ".. ..";
+        vi = "nvim";
+        vim = "nvim";
         zed = "open -a Zed";
       };
 

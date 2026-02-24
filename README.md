@@ -41,3 +41,9 @@ nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch 
 6. Updates
 
 When you make changes to your dotfiles, you can update your system by running:
+
+## Assumptions
+A1. There exists an ~/Archive/Notes/ directory
+A1.2 AMER-Tobi-Lehman will have separate notes from bender (work and personal data kept separate)
+
+

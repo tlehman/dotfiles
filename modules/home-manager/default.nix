@@ -22,6 +22,7 @@
       btop
       comma # https://github.com/nix-community/comma
       fd # file finding
+      glow # CLI markdown reader
       jq # json querying
       just # better make
       neovim

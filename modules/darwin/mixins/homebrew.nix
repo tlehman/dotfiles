@@ -11,7 +11,7 @@
         autoUpdate = true;
       };
       taps = [ ];
-      casks = [ ];
+      casks = [ "obsidian" ];
       brews = [ ];
     };
   };
