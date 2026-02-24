@@ -30,6 +30,7 @@
       ripgrep # fast grep replacement
       tldr # simplified man pages
       tree # print directory trees
+      wget # HTTP downloading
     ];
     home.sessionVariables =
       let
