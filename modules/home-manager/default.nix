@@ -26,6 +26,8 @@
       jq # json querying
       just # better make
       neovim
+      nil
+      nixd
       nix-output-monitor # better visual output for nix builds
       ripgrep # fast grep replacement
       tldr # simplified man pages
