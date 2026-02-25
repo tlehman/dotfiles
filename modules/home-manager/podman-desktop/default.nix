@@ -8,7 +8,7 @@
   options.tlehman.podman-desktop.enable = lib.mkEnableOption "Podman Desktop";
   config = lib.mkIf config.tlehman.podman-desktop.enable {
     home.packages = builtins.attrValues {
-      inherit (pkgs) podman podman-desktop;
+      inherit (pkgs) cri-tools podman podman-desktop;
     };
 
     xdg.configFile."containers/containers.conf".source = config.lib.file.mkOutOfStoreSymlink (
