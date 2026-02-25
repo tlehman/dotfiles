@@ -29,6 +29,7 @@
       nix-output-monitor # better visual output for nix builds
       ripgrep # fast grep replacement
       tldr # simplified man pages
+      tmux # terminal multiplexer
       tree # print directory trees
       wget # HTTP downloading
     ];
