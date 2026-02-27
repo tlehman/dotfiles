@@ -16,6 +16,7 @@
       mkalias.enable = lib.mkDefault true;
       yazi.enable = lib.mkDefault true;
       zed.enable = lib.mkDefault true;
+      helix.enable = lib.mkDefault true;
       podman-desktop.enable = lib.mkDefault true;
     };
     home.packages = with pkgs; [
