@@ -6,9 +6,9 @@
   "welcome.version": "initial",
   "kubectl.binary.installKubectlSystemWide": true,
   "window.bounds": {
-    "x": -2560,
-    "y": -404,
-    "width": 2560,
+    "x": -2051,
+    "y": -398,
+    "width": 1458,
     "height": 848
   },
   "telemetry.check": true,
