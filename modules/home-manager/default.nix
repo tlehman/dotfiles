@@ -19,6 +19,7 @@
       helix.enable = lib.mkDefault true;
       podman-desktop.enable = lib.mkDefault true;
       k9s.enable = lib.mkDefault true;
+      go.enable = lib.mkDefault true;
     };
     home.packages = with pkgs; [
       btop
