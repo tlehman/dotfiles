@@ -21,6 +21,7 @@
         enable = true;
         includes = [ "${config.home.homeDirectory}/.ssh/config.d/*" ];
         matchBlocks."*".forwardAgent = true;
+        matchBlocks."*".setEnv = { TERM = "xterm-256color"; };
         extraConfig = if isDarwin then darwin-extra-config else linux-extra-config;
         enableDefaultConfig = false;
       };

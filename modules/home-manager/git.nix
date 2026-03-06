@@ -54,7 +54,7 @@
             name = "Tobi Lehman";
           };
           core = {
-            editor = "nvim";
+            editor = "hx";
             pager = "diff-so-fancy | less --tabs=4 -RFX";
           };
           init.defaultBranch = "main";
