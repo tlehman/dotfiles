@@ -15,7 +15,7 @@
         "obsidian"
         "tailscale"
       ];
-      brews = [ "fastfetch" "rainfrog" ];
+      brews = [ "fastfetch" "rainfrog" "temporal" ];
     };
   };
 }
