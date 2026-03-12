@@ -15,7 +15,7 @@
         "obsidian"
         "tailscale"
       ];
-      brews = [ "fastfetch" "rainfrog" "temporal" ];
+      brews = [ "cmake" "fastfetch" "pandoc" "mermaid-cli" "texlive" "rainfrog" "temporal" "typescript-language-server"];
     };
   };
 }
