@@ -40,6 +40,7 @@
       tmux # terminal multiplexer
       tree # print directory trees
       wget # HTTP downloading
+      zoxide # smarter cd command with frecency
     ];
     home.sessionVariables =
       let
