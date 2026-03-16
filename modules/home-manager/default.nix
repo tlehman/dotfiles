@@ -34,6 +34,7 @@
       nil
       nixd
       nix-output-monitor # better visual output for nix builds
+      postgresql # SQL database client and tools
       ripgrep # fast grep replacement
       tldr # simplified man pages
       tmux # terminal multiplexer
