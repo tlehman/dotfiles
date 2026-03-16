@@ -21,6 +21,7 @@
       k9s.enable = lib.mkDefault true;
       go.enable = lib.mkDefault true;
       uv.enable = lib.mkDefault true;
+      tmux.enable = lib.mkDefault true;
     };
     home.packages = with pkgs; [
       btop

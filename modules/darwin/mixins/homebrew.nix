@@ -15,7 +15,7 @@
         "obsidian"
         "tailscale"
       ];
-      brews = [ "cmake" "fastfetch" "pandoc" "mermaid-cli" "texlive" "rainfrog" "temporal" "typescript-language-server"];
+      brews = [ "cmake" "fastfetch" "ffmpeg" "pandoc" "mermaid-cli" "texlive" "rainfrog" "temporal" "typescript-language-server"];
     };
   };
 }
