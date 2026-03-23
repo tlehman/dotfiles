@@ -22,6 +22,8 @@
       go.enable = lib.mkDefault true;
       uv.enable = lib.mkDefault true;
       tmux.enable = lib.mkDefault true;
+      terraform.enable = lib.mkDefault true;
+      neovim.enable = lib.mkDefault true;
     };
     home.packages = with pkgs; [
       btop
@@ -30,7 +32,6 @@
       glow # CLI markdown reader
       jq # json querying
       just # better make
-      neovim
       nil
       nixd
       nix-output-monitor # better visual output for nix builds

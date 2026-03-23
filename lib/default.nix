@@ -51,6 +51,11 @@ in
           tlehman.enable = true;
           nixpkgs = {
             hostPlatform = "aarch64-darwin";
+            config.allowUnfreePredicate =
+              pkg:
+              builtins.elem (lib.getName pkg) [
+                "terraform"
+              ];
           };
         }
       ];
