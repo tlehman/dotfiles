@@ -45,11 +45,11 @@
     ];
     home.sessionVariables =
       let
-        helix = "${lib.getExe pkgs.helix}";
+        nvim = "${lib.getExe pkgs.neovim}";
       in
       {
-        EDITOR = helix;
-        VISUAL = helix;
+        EDITOR = nvim;
+        VISUAL = nvim;
       };
     programs = {
       bat.enable = lib.mkDefault true;
