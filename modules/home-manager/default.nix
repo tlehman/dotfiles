@@ -48,8 +48,8 @@
         nvim = "${lib.getExe pkgs.neovim}";
       in
       {
-        EDITOR = nvim;
-        VISUAL = nvim;
+        EDITOR = lib.mkDefault nvim;
+        VISUAL = lib.mkDefault nvim;
       };
     programs = {
       bat.enable = lib.mkDefault true;
